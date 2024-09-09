@@ -3,3 +3,23 @@ bonds
 user_accts
 credit_cards
 debit_cards
+#changes @11:30am
+public static void main(String[] args) {
+    
+    int num = 1234567, reversed = 0;
+
+    for(;num != 0; num /= 10) {
+      int digit = num % 10;
+      reversed = reversed * 10 + digit;
+    }
+
+    System.out.println("Reversed Number: " + reversed);
+  }
+  #end of @11:30
+  
+  #changes @ 2:30am
+  #public static int findGCD(int a, int b) {
+    if (b == 0)
+      return a;
+    return findGCD(b, a % b);
+  }
